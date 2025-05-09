@@ -1,0 +1,102 @@
+<div class="page">
+    <div class="formulario">
+      <div style="text-align: right;">
+        <button class="inicio" (click)=inicio()>🏠Inicio</button>
+      </div>
+      <h1>Registro</h1>
+      <form (ngSubmit)="enviarFormulario()">
+        <div class="form-grid">
+          <div>
+            <label for="id">ID</label>
+            <input
+              type="text"
+              id="id"
+              name="id"
+              required
+              minlength="3"
+              maxlength="10"
+              alert="Recuerda debe ser de 3 a 10 caracteres"
+              [(ngModel)]="product.id"
+              [ngModelOptions]="{ standalone: true }"
+              placeholder="Ingrese ID (3-10)"
+            />
+            <div *ngIf="showErrors && !product.id" style="color:red;">Campo Requerido</div>
+          </div>
+  
+          <div>
+            <label for="nombre">Nombre</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              required
+              [(ngModel)]="product.nombre"
+              [ngModelOptions]="{ standalone: true }"
+              placeholder="Ingrese Nombre"
+            />
+            <div *ngIf="showErrors && !product.nombre" style="color:red;">Campo Requerido</div>
+          </div>
+  
+          <div>
+            <label for="descripcion">Descripción</label>
+            <input
+              type="text"
+              id="descripcion"
+              name="descripcion"
+              required
+              [(ngModel)]="product.descripcion"
+              [ngModelOptions]="{ standalone: true }"
+              placeholder="Ingrese Descripción..."
+            />
+            <div *ngIf="showErrors && !product.descripcion" style="color:red;">Campo Requerido</div>
+          </div>
+  
+          <div>
+            <label for="logo">Logo (URL)</label>
+            <input
+              type="text"
+              id="logo"
+              name="logo"
+              required
+              [(ngModel)]="product.logo"
+              [ngModelOptions]="{ standalone: true }"
+              placeholder="URL del logo..."
+            />
+            <div *ngIf="showErrors && !product.logo" style="color:red;">Campo Requerido</div>
+          </div>
+  
+          <div>
+            <label for="fechaLiberacion">Fecha Liberación</label>
+            <input
+              type="date"
+              id="fechaLiberacion"
+              name="fechaLiberacion"
+              required
+              [(ngModel)]="product.fechaLiberacion"
+              [ngModelOptions]="{ standalone: true }"
+            />
+            <div *ngIf="showErrors && !product.fechaLiberacion" style="color:red;">Campo requerido</div>
+          </div>
+  
+          <div>
+            <label for="fechaRevision">Fecha Revisión</label>
+            <input
+              type="date"
+              id="fechaRevision"
+              name="fechaRevision"
+              required
+              [(ngModel)]="product.fechaRevision"
+              [ngModelOptions]="{ standalone: true }"
+            />
+            <div *ngIf="showErrors && !product.fechaRevision" style="color:red;">Campo Requerido</div>
+          </div>
+        </div>
+        <br />
+        <div class="form-a">
+          <button type="reset" class="borrar-btn">Reiniciar</button>
+          <button type="submit" class="enviar-btn">Enviar</button>
+        </div>
+      </form>
+    </div>
+</div>
+  

@@ -1,0 +1,76 @@
+<div class="general-container">
+    <div class="barra-superior">
+        <div class="busqueda">
+            <input
+                type="text"
+                placeholder="Buscar..."
+                [(ngModel)]="searchText"
+                (ngModelChange)="onSearchTextChange()"
+            />
+        </div>
+        <div class="crear-btn">
+            <button class="btn-crear" (click)="crear()">Crear ➕</button> <!--ojo cambiar nombre de variable-->
+        </div>
+    </div>
+  
+    <div class="table-container">
+        <div class="table-responsive">
+            <table>                
+                <thead>
+                    <tr>
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th>Logo</th>
+                    <th>Descripcion</th>
+                    <th>Fecha Liberacion</th>
+                    <th>Fecha Revision</th>
+                    <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let product of proFilter">
+                        <td>{{ product.id }}</td>
+                        <td>{{ product.nombre }}</td>
+                        <td>
+                            <img
+                            [src]="product.logo"
+                            alt="{{ product.nombre }} logo"
+                            width="30"
+                            height="30"
+                            />
+                        </td>
+                        <td>{{ product.descripcion }}</td>
+                        <td>{{ product.fechaLiberacion | date: 'yyyy-MM-dd' }}</td>
+                        <td>{{ product.fechaRevision | date: 'yyyy-MM-dd' }}</td>
+                        <td>
+                            <button class="btn1" (click)="edit(product.id)">Editar ✏️</button>
+                            <button class="btn2" (click)="confirmEliminate(product)">Eliminar 🗑️</button>
+                        </td>
+                    </tr>
+                  </tbody>                
+            </table>
+        </div>
+    
+        <div class="page-size">
+            <label for="pageSize">Mostrar:</label>
+            <select [(ngModel)]="pageSize" (ngModelChange)="onPageSizeChange()">
+                <option [value]="5">5</option>
+                <option [value]="10">10</option>
+                <option [value]="15">15</option>
+            </select>
+        </div>
+    </div>
+</div>
+  
+   
+    <div class="modal-backdrop" *ngIf="mostrarModal">
+        <div class="modal">
+        <h3>¿Está seguro que desea eliminar este item?</h3>
+        <p><strong>{{ productoAEliminar?.nombre }}</strong></p>
+        <div class="action-buttons">
+            <button class="btn-cancelar" (click)="cancelarEliminacion()">NO</button>
+            <button class="btn-confirmar" (click)="eliminarConfirmado()">SI</button>
+        </div>
+    </div>
+</div>
+  

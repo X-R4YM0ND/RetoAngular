@@ -1,0 +1,207 @@
+/* CONTENEDOR GENERAL */
+.general-container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 1px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0);
+  max-width: 1500px;
+  margin: 40px auto;
+  box-sizing: border-box;
+}
+
+/* NUEVA BARRA SUPERIOR: Búsqueda + botón Agregar */
+.barra-superior {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  max-width: 95%;
+  margin: 0 auto 10px auto;
+  box-sizing: border-box;
+}
+
+.busqueda {
+  margin: 0;
+  width: auto;
+}
+
+.search-bar input {
+  padding: 8px 12px;
+  font-size: 15px;
+  border: 1px solid lightslategray;
+  border-radius: 8px;
+  width: 250px;
+}
+
+.table-container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 2px;
+  width: 90%;
+  overflow-x: auto;
+  max-width: 90%;
+  font-weight: 400;
+  margin: 20px auto;
+}
+
+table {
+  width: 100%;
+  max-width: 95%;
+  margin: 0 auto;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  box-shadow: 0 4px 12px grey;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: darkred;
+  text-align: left; 
+  font-size: 15px;
+}
+
+/* ENCABEZADOS */
+th {
+  background-color: burlywood;
+  color: white ;
+  padding: 15px;
+  font-weight: 500;
+  text-align: center;
+  border-bottom: 1px solid gainsboro;
+  font-size: 15px;
+}
+
+/* CELDAS */
+td {
+  padding: 12px;
+  background-color: whitesmoke;
+  border-bottom: 1px solid white;
+  text-align: center;
+  font-size: 15px;
+}
+
+/* HOVER FILA */
+tr:hover td {
+  background-color: white;
+}
+
+.btn1,
+.btn2 {
+  margin-right: 10px;
+}
+
+.btn1 {
+  padding: 10px 18px;
+  background-color: darkblue;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.btn1:hover {
+  background-color: gainsboro;
+  color: black;
+}
+
+.btn2 {
+  padding: 10px 18px;
+  background-color: firebrick;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+
+}
+
+.btn2:hover {
+  background-color: darkred;
+}
+
+.page-size {
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  font-family: inherit;
+}
+
+.page-size select {
+  padding: 6px 10px;
+  border-radius: 4px;
+  border: 1px solid lightgrey;
+}
+
+.btn-crear {
+  background-color: gold;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.btn-crear:hover {
+  background-color: goldenrod;
+}
+
+.opciones-container {
+  position: relative;
+  display: inline-block;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: white;
+  padding: 24px;
+  border-radius: 8px;
+  text-align: center;
+  width: 500px;
+  box-shadow: 0px 6px 15px black;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.action-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn-cancelar,
+.btn-confirmar {
+  padding: 8px 16px;
+  border: black;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.btn-cancelar {
+  background: white;
+  border-style:solid;
+}
+
+.btn-confirmar {
+  color: white;
+  background: darkred;
+}

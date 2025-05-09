@@ -1,0 +1,68 @@
+{
+  "products": [
+    {
+      "id": "15",
+      "nombre": "Rich",
+      "descripcion": "ard Water",
+      "logo": "Loguito",
+      "fechaLiberacion": "2025-05-06",
+      "fechaRevision": "2026-07-11"
+    },
+    {
+      "id": "1",
+      "nombre": "Ricardo",
+      "descripcion": "desc2",
+      "logo": "adsa",
+      "fechaLiberacion": "2025-05-13",
+      "fechaRevision": "2025-05-31"
+    },
+    {
+      "id": "3",
+      "nombre": "prueba3",
+      "descripcion": "p3",
+      "logo": "pb3",
+      "fechaLiberacion": "2025-05-30",
+      "fechaRevision": "2025-07-07"
+    },
+    {
+      "id": "4",
+      "nombre": "prueba4",
+      "descripcion": "p4",
+      "logo": "pb4",
+      "fechaLiberacion": "2025-05-14",
+      "fechaRevision": "2025-05-07T15:23:54.797Z"
+    },
+    {
+      "id": "5",
+      "nombre": "prueba5",
+      "descripcion": "p5",
+      "logo": "pb5",
+      "fechaLiberacion": "2025-06-11",
+      "fechaRevision": "2029-06-12"
+    },
+    {
+      "id": "a",
+      "nombre": "aaaaaaaaaa",
+      "descripcion": "aaaaaaa",
+      "logo": "aaaaaaaaa",
+      "fechaLiberacion": "2025-05-08",
+      "fechaRevision": "2025-05-28"
+    },
+    {
+      "id": "qw23",
+      "nombre": "d",
+      "descripcion": "asdas",
+      "logo": "aaaajghgd",
+      "fechaLiberacion": "2025-05-08",
+      "fechaRevision": "2025-05-28"
+    },
+    {
+      "id": "345",
+      "nombre": "1232",
+      "descripcion": "3",
+      "logo": "3",
+      "fechaLiberacion": "2025-05-08T20:54:30.145Z",
+      "fechaRevision": "2025-05-08T20:54:30.145Z"
+    }
+  ]
+}
