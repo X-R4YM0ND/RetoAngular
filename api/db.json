@@ -4,7 +4,7 @@
       "id": "15",
       "nombre": "Rich",
       "descripcion": "ard Water",
-      "logo": "Loguito",
+      "logo": "https://cdn-icons-png.flaticon.com/256/3690/3690940.png",
       "fechaLiberacion": "2025-05-06",
       "fechaRevision": "2026-07-11"
     },
@@ -12,7 +12,7 @@
       "id": "1",
       "nombre": "Ricardo",
       "descripcion": "desc2",
-      "logo": "adsa",
+      "logo": "https://cdn-icons-png.flaticon.com/256/3690/3690940.png",
       "fechaLiberacion": "2025-05-13",
       "fechaRevision": "2025-05-31"
     },
@@ -20,7 +20,7 @@
       "id": "3",
       "nombre": "prueba3",
       "descripcion": "p3",
-      "logo": "pb3",
+      "logo": "https://cdn-icons-png.flaticon.com/256/3690/3690940.png",
       "fechaLiberacion": "2025-05-30",
       "fechaRevision": "2025-07-07"
     },
@@ -28,23 +28,23 @@
       "id": "4",
       "nombre": "prueba4",
       "descripcion": "p4",
-      "logo": "pb4",
+      "logo": "https://cdn-icons-png.flaticon.com/256/3690/3690940.png",
       "fechaLiberacion": "2025-05-14",
       "fechaRevision": "2025-05-07T15:23:54.797Z"
     },
     {
       "id": "5",
       "nombre": "prueba5",
-      "descripcion": "p5",
-      "logo": "pb5",
+      "descripcion": "pb5",
+      "logo": "https://cdn-icons-png.flaticon.com/512/2327/2327001.png",
       "fechaLiberacion": "2025-06-11",
       "fechaRevision": "2029-06-12"
     },
     {
-      "id": "a",
+      "id": "6",
       "nombre": "aaaaaaaaaa",
       "descripcion": "aaaaaaa",
-      "logo": "aaaaaaaaa",
+      "logo": "https://cdn-icons-png.flaticon.com/512/2327/2327001.png",
       "fechaLiberacion": "2025-05-08",
       "fechaRevision": "2025-05-28"
     },
@@ -52,7 +52,7 @@
       "id": "qw23",
       "nombre": "d",
       "descripcion": "asdas",
-      "logo": "aaaajghgd",
+      "logo": "https://cdn-icons-png.flaticon.com/512/2327/2327001.pngjghgd",
       "fechaLiberacion": "2025-05-08",
       "fechaRevision": "2025-05-28"
     },
@@ -60,7 +60,7 @@
       "id": "345",
       "nombre": "1232",
       "descripcion": "3",
-      "logo": "3",
+      "logo": "https://cdn-icons-png.flaticon.com/512/2327/2327001.png",
       "fechaLiberacion": "2025-05-08T20:54:30.145Z",
       "fechaRevision": "2025-05-08T20:54:30.145Z"
     }
